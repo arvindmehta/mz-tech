@@ -29,12 +29,8 @@ const Slider = ({ label, value, min, max, step, format, onChange, testid }) => (
 const Estimator = () => {
     const [visitors, setVisitors] = useState(800);
     const [conversion, setConversion] = useState(3);
-    const [jobValue, setJobValue] = useState(5000);
 
     const leads = Math.round((visitors * conversion) / 100);
-    const revenue = leads * jobValue;
-
-    const fmtMoney = (n) => "$" + n.toLocaleString();
 
     return (
         <section id="estimator" data-testid="estimator-section" className="relative py-24 lg:py-32">
@@ -45,11 +41,11 @@ const Estimator = () => {
                             Growth estimator
                         </p>
                         <h2 className="font-display mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl" data-testid="estimator-heading">
-                            What could a better website be worth to you?
+                            How many enquiries could your website bring?
                         </h2>
                         <p className="mt-4 max-w-md text-base text-slate-400">
-                            Move the sliders. See how even a small lift in enquiries turns
-                            into real money for your business each month.
+                            Move the sliders and see how a better website turns more of
+                            your visitors into real enquiries each month.
                         </p>
 
                         <div className="mt-10 space-y-8 rounded-3xl border border-white/10 bg-[#161E2E] p-8">
@@ -73,16 +69,6 @@ const Estimator = () => {
                                 onChange={setConversion}
                                 testid="estimator-conversion-slider"
                             />
-                            <Slider
-                                label="Value of one customer"
-                                value={jobValue}
-                                min={500}
-                                max={50000}
-                                step={500}
-                                format={fmtMoney}
-                                onChange={setJobValue}
-                                testid="estimator-value-slider"
-                            />
                         </div>
                     </Reveal>
 
@@ -98,23 +84,10 @@ const Estimator = () => {
                                 key={leads}
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                className="font-display mt-3 text-5xl font-extrabold text-white sm:text-6xl"
+                                className="font-display mt-3 text-6xl font-extrabold text-amber-400 sm:text-7xl"
                                 data-testid="estimator-leads-result"
                             >
                                 {leads}
-                            </motion.p>
-                            <div className="mx-auto my-8 h-px w-2/3 bg-white/10" aria-hidden="true" />
-                            <p className="font-mono-tech text-xs uppercase tracking-[0.25em] text-slate-400">
-                                Potential monthly value
-                            </p>
-                            <motion.p
-                                key={revenue}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                className="font-display mt-3 text-5xl font-extrabold text-amber-400 sm:text-6xl"
-                                data-testid="estimator-revenue-result"
-                            >
-                                {fmtMoney(revenue)}
                             </motion.p>
                             <p className="mt-6 text-xs text-slate-500">
                                 A guide only — real results depend on your market and offer.

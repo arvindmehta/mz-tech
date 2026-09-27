@@ -34,7 +34,7 @@ User wants a website for a new company (name: **MZ Tech**). Founder has 17 years
 - data-testids on all interactive elements.
 
 ## Placeholders to update before go-live
-- Phone (+61 400 000 000), email (hello@mztech.com), WhatsApp number are PLACEHOLDERS.
+- Phone (+61 400 000 000), email (hello@mztech.com), WhatsApp number are PLACEHOLDERS (user confirmed 27 Sep 2026: keep placeholders for now, decide before go-live; WhatsApp intentionally mirrors the phone number so one change updates both).
 - Hero "live proof" metrics are illustrative examples.
 - Company registration details / ABN not yet added.
 
@@ -48,6 +48,9 @@ User wants a website for a new company (name: **MZ Tech**). Founder has 17 years
 
 - Logo v3: amber diamond badge with dark diagonal Z-slash (construction-signage nod); favicon matched.
 - Copy voice switched from first-person "I" to "we" throughout (hero, about, experience section).
+
+- Estimator simplified (user feedback): removed "potential monthly value" dollar figure and value-per-customer slider; now estimates monthly enquiries only.
+- Care banner expanded (user feedback): "We build it / We maintain it" twin points, no pricing — user does not want costs on site.
 
 ## Backlog (prioritized)
 - **P0**: Real contact details (phone/email/WhatsApp); connect form to email notification (e.g. Resend) so leads hit the owner's inbox.

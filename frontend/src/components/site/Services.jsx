@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Search, Megaphone, Workflow, Check, LifeBuoy } from "lucide-react";
+import { Globe, Search, Megaphone, Workflow, Check, LifeBuoy, Hammer, Wrench } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const SERVICES = [
@@ -93,15 +93,35 @@ const Services = () => (
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-500 text-slate-950">
                         <LifeBuoy className="h-7 w-7" />
                     </div>
-                    <div>
+                    <div className="flex-1">
                         <h3 className="font-display text-xl font-semibold text-white sm:text-2xl">
                             We don't disappear after launch
                         </h3>
                         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-300 sm:text-base">
-                            Your website is looked after for as long as you want — updates,
-                            backups, security checks and small changes, all handled by us.
-                            You run your business; we keep your website healthy and working.
+                            One team for the whole journey — no handovers, no chasing
+                            different people. We build your website, and then we keep
+                            looking after it.
                         </p>
+                        <div className="mt-6 grid max-w-2xl gap-4 sm:grid-cols-2">
+                            <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-900/60 p-4" data-testid="care-build-item">
+                                <Hammer className="mt-0.5 h-5 w-5 shrink-0 text-amber-400" />
+                                <div>
+                                    <p className="text-sm font-semibold text-white">We build it</p>
+                                    <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                                        Fast, modern websites made to win you enquiries.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-slate-900/60 p-4" data-testid="care-maintain-item">
+                                <Wrench className="mt-0.5 h-5 w-5 shrink-0 text-amber-400" />
+                                <div>
+                                    <p className="text-sm font-semibold text-white">We maintain it</p>
+                                    <p className="mt-1 text-sm leading-relaxed text-slate-400">
+                                        Updates, backups, security and small changes — handled for you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Reveal>
