@@ -84,7 +84,7 @@ const Hero = () => {
                         className="mt-7 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
                         data-testid="hero-subtext"
                     >
-                        Simple, honest digital help for your business. For 17 years I've
+                        Simple, honest digital help for your business. For 17 years we've
                         built and managed websites for a big bank, a major utility
                         provider, retail brands and not-for-profits — now that experience
                         works for you.

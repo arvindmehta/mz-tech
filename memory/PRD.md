@@ -46,6 +46,9 @@ User wants a website for a new company (name: **MZ Tech**). Founder has 17 years
 - Added ongoing website care messaging (user request: "we will take care of your websites after building it, will manage it"): care banner in Services ("We don't disappear after launch"), new FAQ on post-launch management, About section line on ongoing management.
 - Fixed mobile hero overflow: grid columns lacked min-w-0, causing hero text to clip 22px past the right edge at 375px.
 
+- Logo v3: amber diamond badge with dark diagonal Z-slash (construction-signage nod); favicon matched.
+- Copy voice switched from first-person "I" to "we" throughout (hero, about, experience section).
+
 ## Backlog (prioritized)
 - **P0**: Real contact details (phone/email/WhatsApp); connect form to email notification (e.g. Resend) so leads hit the owner's inbox.
 - **P1**: Portfolio/case-studies section with real projects; Google Maps + business address; actual testimonials.

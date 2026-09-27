@@ -43,13 +43,13 @@ const About = () => (
                     </h2>
                     <p className="mt-6 max-w-lg text-base leading-relaxed text-slate-300">
                         After 17 years of building websites and running digital marketing,
-                        I started MZ Tech with one simple idea: give hard-working business
+                        we started MZ Tech with one simple idea: give hard-working business
                         owners the same quality the big companies get — explained simply,
                         priced fairly, delivered properly.
                     </p>
                     <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-400">
                         From a big bank and a major utility provider to local shops and
-                        community groups — every project taught me something. Whatever
+                        community groups — every project taught us something. Whatever
                         your business, it deserves to be found online.
                     </p>
 

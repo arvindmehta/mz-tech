@@ -45,9 +45,9 @@ const Industries = () => (
                     Big-brand experience. Small-business care.
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-400">
-                    Over 17 years I have built, managed and grown websites and digital
+                    Over 17 years we have built, managed and grown websites and digital
                     campaigns for organisations of every size. The same care and quality
-                    now goes into every business I work with — including yours.
+                    now goes into every business we work with — including yours.
                 </p>
             </Reveal>
 
@@ -79,7 +79,7 @@ const Industries = () => (
                 >
                     <p className="text-sm leading-relaxed text-slate-300 sm:text-base">
                         <span className="font-semibold text-amber-400">An honest note:</span>{" "}
-                        much of this past work was delivered as an employee or contractor,
+                        much of our past work was delivered as an employee or contractor,
                         so brand names stay private. The experience behind MZ Tech,
                         however, is completely real — and it works for you now.
                     </p>

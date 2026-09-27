@@ -8,10 +8,9 @@ const Footer = () => (
             <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
                 <div className="max-w-sm">
                     <div className="flex items-center gap-2.5">
-                        <LogoMark size={26} />
-                        <span className="font-display text-xl font-bold tracking-tight text-amber-400">
-                            Tech
-                            <span className="sr-only"> — MZ Tech</span>
+                        <LogoMark size={30} />
+                        <span className="font-display text-xl font-bold tracking-tight text-white">
+                            MZ <span className="text-amber-400">Tech</span>
                         </span>
                     </div>
                     <p className="mt-5 text-sm leading-relaxed text-slate-400">
