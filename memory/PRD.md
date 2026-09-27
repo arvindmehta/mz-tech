@@ -52,6 +52,8 @@ User wants a website for a new company (name: **MZ Tech**). Founder has 17 years
 - Estimator simplified (user feedback): removed "potential monthly value" dollar figure and value-per-customer slider; now estimates monthly enquiries only.
 - Care banner expanded (user feedback): "We build it / We maintain it" twin points, no pricing — user does not want costs on site.
 
+- Google Sheets enquiry feature added (27 Sep 2026): owner connects their own Google account via footer link "Owner: Connect Google Sheets" (OAuth, restricted to OWNER_EMAIL = mehtazoeytech@gmail.com — other accounts are rejected and revoked). On first connect, a "MZ Tech Enquiries" sheet is auto-created with header row (Timestamp, Name, Email, Phone, Business Type, Service, Message). Every enquiry is saved to MongoDB (silent backup) AND appended to the sheet (best-effort — form never fails if Sheets is down). Token auto-refresh + disconnect/revoke endpoint included. Credentials are DUMMY placeholders in backend/.env (GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET) — user will replace them after creating OAuth credentials in Google Cloud Console. GOOGLE_REDIRECT_URI must be updated (and added in Google Console) when the live domain mztech.com.au is connected.
+
 ## Backlog (prioritized)
 - **P0**: Real contact details (phone/email/WhatsApp); connect form to email notification (e.g. Resend) so leads hit the owner's inbox.
 - **P1**: Portfolio/case-studies section with real projects; Google Maps + business address; actual testimonials.

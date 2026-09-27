@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import "@/App.css";
+import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import { setLenis } from "@/lib/scroll";
 import Header from "@/components/site/Header";
@@ -15,6 +16,23 @@ import Faq from "@/components/site/Faq";
 import Footer from "@/components/site/Footer";
 
 function App() {
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const sheets = params.get("sheets");
+        if (sheets === "connected") {
+            toast.success("Google Sheets connected.", {
+                description: "New enquiries will appear in your 'MZ Tech Enquiries' sheet automatically.",
+            });
+        } else if (sheets === "error") {
+            toast.error("Google Sheets connection failed.", {
+                description: "Please try again with the site owner's Google account.",
+            });
+        }
+        if (sheets) {
+            window.history.replaceState({}, "", window.location.pathname);
+        }
+    }, []);
+
     useEffect(() => {
         const lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 1 });
         setLenis(lenis);
