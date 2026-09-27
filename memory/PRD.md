@@ -38,6 +38,14 @@ User wants a website for a new company (name: **MZ Tech**). Founder has 17 years
 - Hero "live proof" metrics are illustrative examples.
 - Company registration details / ABN not yet added.
 
+## Updates (27 Sep 2026 — iteration 2)
+- Rebranded logo: clean geometric MZ stroke monogram (white M, amber Z), removed "WEB · SEO · GROWTH" tagline; favicon updated to match. Header cleaned up with mono uppercase nav links.
+- Removed niche-specific claims (construction/fencing/mortgage): Industries tabs section replaced by "Experience" section covering Banking & Finance, Utilities, Retail & Manufacturing, Not-for-Profit, Trades & Construction, Property & Lending — no brand names (work done as employee/contractor, stated honestly on-page).
+- Hero, marquee, about, FAQ, footer, meta description, and enquiry form business-type options generalized accordingly.
+
+- Added ongoing website care messaging (user request: "we will take care of your websites after building it, will manage it"): care banner in Services ("We don't disappear after launch"), new FAQ on post-launch management, About section line on ongoing management.
+- Fixed mobile hero overflow: grid columns lacked min-w-0, causing hero text to clip 22px past the right edge at 375px.
+
 ## Backlog (prioritized)
 - **P0**: Real contact details (phone/email/WhatsApp); connect form to email notification (e.g. Resend) so leads hit the owner's inbox.
 - **P1**: Portfolio/case-studies section with real projects; Google Maps + business address; actual testimonials.

@@ -6,7 +6,7 @@ const ITEMS = [
     "SEO That Ranks",
     "Marketing Automation",
     "Digital Marketing",
-    "Trusted by Builders & Brokers",
+    "Big-Brand Experience, Small-Business Care",
 ];
 
 const MarqueeRibbon = () => (

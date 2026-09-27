@@ -48,8 +48,14 @@ const About = () => (
                         priced fairly, delivered properly.
                     </p>
                     <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-400">
-                        Whether you pour concrete, hire out fencing, or help families into
-                        their first home — your business deserves to be found online.
+                        From a big bank and a major utility provider to local shops and
+                        community groups — every project taught me something. Whatever
+                        your business, it deserves to be found online.
+                    </p>
+
+                    <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-400">
+                        And once your website is live, we don't walk away — we manage it
+                        for you, keeping it updated, secure and working hard every day.
                     </p>
 
                     <div className="mt-12 grid grid-cols-3 gap-6" data-testid="about-stats">

@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
-const BUSINESS_TYPES = ["Builder / Construction", "Temporary Fencing", "Mortgage Broker", "Other Business"];
+const BUSINESS_TYPES = ["Trades & Construction", "Finance & Property", "Retail & Manufacturing", "Not-for-Profit", "Other Business"];
 const SERVICES = ["Website Development", "SEO", "Digital Marketing", "Marketing Automation", "Not sure yet"];
 
 const inputCls =

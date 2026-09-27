@@ -7,16 +7,17 @@ const Footer = () => (
         <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
             <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
                 <div className="max-w-sm">
-                    <div className="flex items-center gap-3">
-                        <LogoMark size={40} />
-                        <span className="font-display text-xl font-bold tracking-tight text-white">
-                            MZ Tech
+                    <div className="flex items-center gap-2.5">
+                        <LogoMark size={26} />
+                        <span className="font-display text-xl font-bold tracking-tight text-amber-400">
+                            Tech
+                            <span className="sr-only"> — MZ Tech</span>
                         </span>
                     </div>
                     <p className="mt-5 text-sm leading-relaxed text-slate-400">
-                        Websites, SEO, digital marketing and automation for builders,
-                        fencing contractors and mortgage brokers. 17 years of experience,
-                        explained in simple words.
+                        Websites, SEO, digital marketing and automation — 17 years of
+                        experience across banking, utilities, retail, not-for-profit and
+                        local business, explained in simple words.
                     </p>
                 </div>
 
@@ -27,7 +28,7 @@ const Footer = () => (
                     <div className="mt-5 flex flex-col gap-3">
                         {[
                             ["Services", "#services"],
-                            ["Industries", "#industries"],
+                            ["Experience", "#experience"],
                             ["Estimator", "#estimator"],
                             ["Why Us", "#about"],
                         ].map(([label, href]) => (

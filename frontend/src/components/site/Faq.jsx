@@ -17,11 +17,15 @@ const FAQS = [
     },
     {
         q: "I'm not good with technology. Is that a problem?",
-        a: "Not at all. Most of our clients are busy tradies and brokers, not tech people. We explain everything in plain English and handle all the technical work for you.",
+        a: "Not at all. Most of our clients are busy business owners, not tech people. We explain everything in plain English and handle all the technical work for you.",
     },
     {
         q: "Will my website show up on Google?",
         a: "Yes. Every site we build is set up for Google from day one. With our SEO service, we work month by month to move you higher for the searches your customers actually type.",
+    },
+    {
+        q: "What happens after my website is built?",
+        a: "We stay with you. We manage your website after launch — updates, backups, security and small changes are all taken care of, so your site keeps running smoothly while you focus on your business.",
     },
     {
         q: "Can you help if I already have a website?",

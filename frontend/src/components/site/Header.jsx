@@ -6,7 +6,7 @@ import { scrollToId } from "@/lib/scroll";
 
 const LINKS = [
     { label: "Services", href: "#services" },
-    { label: "Industries", href: "#industries" },
+    { label: "Experience", href: "#experience" },
     { label: "Estimator", href: "#estimator" },
     { label: "Why Us", href: "#about" },
     { label: "FAQ", href: "#faq" },
@@ -41,7 +41,7 @@ const Header = () => {
                             key={l.href}
                             data-testid={`nav-link-${l.label.toLowerCase().replace(/\s/g, "-")}`}
                             onClick={() => go(l.href)}
-                            className="text-sm font-medium text-slate-300 transition-colors duration-300 hover:text-amber-400"
+                            className="font-mono-tech text-xs uppercase tracking-[0.15em] text-slate-300 transition-colors duration-300 hover:text-amber-400"
                         >
                             {l.label}
                         </button>
@@ -84,7 +84,7 @@ const Header = () => {
                                     key={l.href}
                                     data-testid={`mobile-nav-link-${l.label.toLowerCase().replace(/\s/g, "-")}`}
                                     onClick={() => go(l.href)}
-                                    className="rounded-lg px-3 py-3 text-left text-base font-medium text-slate-200 transition-colors duration-300 hover:bg-white/5 hover:text-amber-400"
+                                    className="rounded-lg px-3 py-3 text-left font-mono-tech text-xs uppercase tracking-[0.15em] text-slate-200 transition-colors duration-300 hover:bg-white/5 hover:text-amber-400"
                                 >
                                     {l.label}
                                 </button>

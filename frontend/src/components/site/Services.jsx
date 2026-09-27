@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Search, Megaphone, Workflow, Check } from "lucide-react";
+import { Globe, Search, Megaphone, Workflow, Check, LifeBuoy } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const SERVICES = [
@@ -84,6 +84,27 @@ const Services = () => (
                     </Reveal>
                 ))}
             </div>
+
+            <Reveal delay={0.15}>
+                <div
+                    className="mt-6 flex flex-col items-start gap-6 rounded-3xl border border-amber-500/30 bg-gradient-to-r from-amber-500/10 via-[#161E2E] to-[#161E2E] p-8 sm:flex-row sm:items-center lg:p-10"
+                    data-testid="service-care-banner"
+                >
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-500 text-slate-950">
+                        <LifeBuoy className="h-7 w-7" />
+                    </div>
+                    <div>
+                        <h3 className="font-display text-xl font-semibold text-white sm:text-2xl">
+                            We don't disappear after launch
+                        </h3>
+                        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-300 sm:text-base">
+                            Your website is looked after for as long as you want — updates,
+                            backups, security checks and small changes, all handled by us.
+                            You run your business; we keep your website healthy and working.
+                        </p>
+                    </div>
+                </div>
+            </Reveal>
         </div>
     </section>
 );

@@ -17,8 +17,8 @@ const LINES = [
 
 const METRICS = [
     { icon: MousePointerClick, label: "Enquiries this month", value: "38", note: "+52% after relaunch" },
-    { icon: Search, label: "Google ranking", value: "#1", note: '"temporary fence hire"' },
-    { icon: TrendingUp, label: "Ad spend return", value: "6.4x", note: "mortgage lead campaign" },
+    { icon: Search, label: "Google ranking", value: "#1", note: "top local search terms" },
+    { icon: TrendingUp, label: "Ad spend return", value: "6.4x", note: "lead generation campaign" },
 ];
 
 const Hero = () => {
@@ -48,7 +48,7 @@ const Hero = () => {
             />
 
             <div className="relative mx-auto grid max-w-7xl gap-16 px-5 pb-24 pt-16 sm:pt-24 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:pb-32 lg:pt-28">
-                <div className="lg:col-span-7">
+                <div className="min-w-0 lg:col-span-7">
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -84,9 +84,10 @@ const Hero = () => {
                         className="mt-7 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
                         data-testid="hero-subtext"
                     >
-                        Simple, honest digital help for construction businesses, fencing
-                        contractors and mortgage brokers. We handle your website, Google
-                        ranking, ads and follow-ups — you focus on the work you do best.
+                        Simple, honest digital help for your business. For 17 years I've
+                        built and managed websites for a big bank, a major utility
+                        provider, retail brands and not-for-profits — now that experience
+                        works for you.
                     </motion.p>
 
                     <motion.div
@@ -114,7 +115,7 @@ const Hero = () => {
                     </motion.div>
                 </div>
 
-                <div className="lg:col-span-5" style={{ perspective: 1200 }}>
+                <div className="min-w-0 lg:col-span-5" style={{ perspective: 1200 }}>
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -151,7 +152,7 @@ const Hero = () => {
                             ))}
                         </div>
                         <p className="mt-6 text-center text-xs text-slate-500">
-                            Example results from trade &amp; broker projects
+                            Example results from past client projects
                         </p>
                     </motion.div>
                 </div>
