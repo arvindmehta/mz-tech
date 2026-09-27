@@ -1,0 +1,49 @@
+# MZ Tech — PRD
+
+## Original Problem Statement
+User wants a website for a new company (name: **MZ Tech**). Founder has 17 years of software development experience (websites, digital marketing, SEO, marketing automation). Target audience: construction businessmen (builders, temporary fencing) and mortgage brokers, primarily Indian and Asian communities. Content must be simple and easy for everyone to understand.
+
+## Architecture
+- **Frontend**: React (CRA/craco), Tailwind CSS, framer-motion (kinetic hero reveal, scroll reveals, 3D tilt card), lenis (smooth momentum scroll), react-fast-marquee (editorial ribbon), sonner (toasts), shadcn/ui accordion. Custom MZ monogram SVG logo + favicon.
+- **Backend**: FastAPI, MongoDB via motor. `POST /api/enquiries` (lead capture, validated), `GET /api/enquiries` (list), `GET /api/` health. Pydantic BaseDocument pattern for ObjectId handling.
+- **Design**: Swiss high-contrast industrial dark slate (#0B0F17) + amber gold (#F59E0B); Outfit/Inter/JetBrains Mono fonts.
+
+## User Personas
+- Construction builder / fencing contractor: wants more quote requests, not tech-savvy.
+- Mortgage broker: wants steady quality loan enquiries and automated follow-up.
+- Both: value plain English, honest pricing, community trust.
+
+## Core Requirements (static)
+1. Single-page lead-generation marketing site for MZ Tech.
+2. Highlight all 4 services: Web Development, SEO, Digital Marketing, Marketing Automation.
+3. Industry-specific messaging for Builders/Fencing vs Mortgage Brokers.
+4. Simple, jargon-free, trust-focused English.
+5. Contact/enquiry form capturing leads to database with toast confirmation.
+
+## Implemented (27 Sep 2026)
+- Kinetic hero: masked line-by-line headline reveal, 17-year proof pill, parallax glow, 3D-tilting live-proof metrics card.
+- Editorial marquee ribbon.
+- Services bento grid (4 services, tetris layout).
+- Industries tabbed showcase (Builders & Fencing / Mortgage Brokers) with curated imagery.
+- Interactive growth/lead estimator with sliders + toast.
+- Founder story + trust pillars + stats.
+- Enquiry form -> MongoDB via POST /api/enquiries, sonner success/error toasts.
+- FAQ accordion (5 plain-English Q&As).
+- Footer with contact links, WhatsApp quick-connect.
+- Custom MZ logo SVG used in header, footer, favicon.
+- data-testids on all interactive elements.
+
+## Placeholders to update before go-live
+- Phone (+61 400 000 000), email (hello@mztech.com), WhatsApp number are PLACEHOLDERS.
+- Hero "live proof" metrics are illustrative examples.
+- Company registration details / ABN not yet added.
+
+## Backlog (prioritized)
+- **P0**: Real contact details (phone/email/WhatsApp); connect form to email notification (e.g. Resend) so leads hit the owner's inbox.
+- **P1**: Portfolio/case-studies section with real projects; Google Maps + business address; actual testimonials.
+- **P2**: Multi-language support (Hindi/Punjabi toggle); blog for SEO; admin page to view enquiries in-browser; Google Analytics/Search Console wiring; pricing packages page.
+
+## Next Tasks
+1. Swap placeholder phone/email/WhatsApp with real details.
+2. Add email notification on new enquiry (Resend managed integration).
+3. Portfolio section once real client work is available.

@@ -1,0 +1,122 @@
+{
+  "identity": {
+    "brand_name": "MZ Tech",
+    "tagline": "High-Converting Websites & Automation for Construction Builders & Mortgage Brokers",
+    "founder_experience": "17 Years of Software Engineering & Digital Growth Mastery",
+    "target_audience": "Construction Business Owners, Home Builders, Temporary Fencing Operators, Mortgage Brokers (focused on Indian & Asian business communities seeking clear, honest digital solutions)",
+    "tone_and_voice": "Trustworthy, direct, jargon-free, warm community-oriented, high-precision engineering",
+    "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST with warm luxury industrial touches (Deep Onyx #0B0F17, Amber Gold Accent #F59E0B, Pure White #FFFFFF, Warm Stone #F3F4F6)",
+    "app_type": "marketing_site / lead-generation agency portfolio site"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk / Outfit / Plus Jakarta Sans",
+    "body_font": "Inter / DM Sans",
+    "mono_font": "JetBrains Mono",
+    "font_pairings": "Bold Geometric Sans for Headings (Outfit/Plus Jakarta Sans) + Clean Accessible Sans for Body (Inter) + Technical Mono for Badges & Metrics",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3_card": "text-xl sm:text-2xl font-semibold tracking-normal",
+      "body": "text-base sm:text-lg leading-relaxed text-slate-300",
+      "caption_badge": "text-xs font-mono uppercase tracking-widest text-amber-400"
+    }
+  },
+  "colors": {
+    "theme": "Dark / High-Contrast Industrial Slate & Warm Gold Accent",
+    "primary": "#0F172A",
+    "background_dark": "#0B0F17",
+    "card_bg_dark": "#161E2E",
+    "accent_gold": "#F59E0B",
+    "accent_gold_glow": "rgba(245, 158, 11, 0.25)",
+    "accent_emerald_success": "#10B981",
+    "text_main": "#F8FAFC",
+    "text_muted": "#94A3B8",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "forbidden_colors": ["#7351B7", "#1B93A4"]
+  },
+  "surface_strategies": {
+    "header_nav": "Crystal Glassmorphism with backdrop-blur-xl bg-slate-950/80 border-b border-white/10 sticky top-0 z-50",
+    "hero_card": "Tracing Beam accent outline with subtle radial spotlight mesh gradient",
+    "feature_cards": "Bento Grid cards with 1px subtle border (border-white/10), dark slate background (#161E2E), hover hover:border-amber-500/50 hover:-translate-y-1 transition-all duration-300",
+    "forms": "High contrast inputs with focus:ring-2 focus:ring-amber-500 focus:bg-slate-900 bg-slate-900/90 border border-slate-700 text-white rounded-xl"
+  },
+  "layout_and_bento": {
+    "spacing_philosophy": "Generous Spacing (py-20 to py-32 for sections, gap-8 to gap-12 for grids)",
+    "bento_grid_mode": "MODE A: TETRIS GRID for Services and Industry Solutions",
+    "hero_layout": "Asymmetric kinetic hero: Left 7 cols for headline, 17-year founder badge, dual CTAs; Right 5 cols for interactive 3D/Card preview of lead engines and live proof metrics",
+    "sections_structure": [
+      "1. Kinetic Sticky Header (Logo, Services, Industries, Why Us, Calculator, CTA button)",
+      "2. Hero Section (Masked line-by-line kinetic title, 17-year proof pill, direct call/book CTAs, quick lead form preview)",
+      "3. Editorial Marquee Ribbon ('17+ Years Dev Experience • Construction Tech • Mortgage Funnels • SEO Domination • Marketing Automation •')",
+      "4. Core Services Bento Grid (Web Dev, SEO, Marketing Automation, Digital Ads with live interactive detail tab toggles)",
+      "5. Target Industries Showcase (Construction Builders & Fencing vs Mortgage Brokers tailored value props)",
+      "6. Interactive Growth ROI & Lead Estimator (Calculator widget tailored for trade & broker lead value)",
+      "7. 17-Year Founder Story & Trust Pillars (Simple language, community focus, zero fluff, transparent pricing)",
+      "8. Interactive Lead Generation Contact / Enquiry Form with instant Sonner Toast confirmation",
+      "9. FAQ Accordion (Addressing common builder & broker questions: timeline, costs, ROI, simplicity)",
+      "10. High-Contrast Footer (Logo mark, contact phone/email, direct WhatsApp quick-connect link, copyright)"
+    ]
+  },
+  "motion_and_interactions": {
+    "scroll_engine": "Lenis smooth scroll integration",
+    "framer_motion_effects": "Scroll-triggered staggered entrance animations, glowing card hover states, spring micro-interactions",
+    "kinetic_hero_reveal": "Line-by-line vertical reveal for hero headline and subtle parallax background glow",
+    "marquee": "react-fast-marquee smooth slow drift with warm muted styling"
+  },
+  "image_urls": {
+    "construction_builders": [
+      {
+        "url": "https://images.unsplash.com/photo-1612725118809-0bebfb71a551?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHszfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRlciUyMGFyY2hpdGVjdHVyYWwlMjBibHVlcHJpbnQlMjB3b3JrZXJ8ZW58MHx8fHwxNzkwNDk2ODAwfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Construction builder with safety helmet examining building site",
+        "category": "industry_construction"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1768677903496-becc4be07258?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRlciUyMGFyY2hpdGVjdHVyYWwlMjBibHVlcHJpbnQlMjB3b3JrZXJ8ZW58MHx8fHwxNzkwNDk2ODAwfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Construction worker inspecting structure on building site",
+        "category": "industry_construction"
+      }
+    ],
+    "mortgage_finance": [
+      {
+        "url": "https://images.unsplash.com/photo-1783094267427-e97c2a97bb98?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxtb3J0Z2FnZSUyMGJyb2tlciUyMGZpbmFuY2UlMjBkaXNjdXNzaW9uJTIwbWVldGluZyUyMGhvdXNlJTIwY29udHJhY3R8ZW58MHx8fHwxNzkwNDk2ODA4fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Mortgage clients discussing property financing outside modern home",
+        "category": "industry_mortgage"
+      }
+    ],
+    "web_dev_agency": [
+      {
+        "url": "https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxtb3Rlcm4lMjBvZmZpY2UlMjBkZXZlbG9wZXIlMjB3b3JraW5nJTIwd2Vic2l0ZSUyMG1hcmtldGluZyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc5MDQ5NjgwOHww&ixlib=rb-4.1.0&q=85",
+        "alt": "High performance web development dashboard code and digital tools",
+        "category": "agency_work"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1542744094-3a31f272c490?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjBkZXZlbG9wZXIlMjB3b3JraW5nJTIwd2Vic2l0ZSUyMG1hcmtldGluZyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc5MDQ5NjgwOHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Senior tech founder crafting digital marketing and web strategy",
+        "category": "agency_work"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page high-converting agency site for MZ Tech",
+    "Highlight 17 years of software development & digital marketing expertise",
+    "Include interactive service cards for Web Dev, SEO, Digital Marketing, and Marketing Automation",
+    "Build tailored audience tabs/toggle for Builders/Temporary Fencing vs Mortgage Brokers",
+    "Include an interactive ROI / Lead Estimator widget allowing builders and brokers to estimate monthly lead growth",
+    "Use Sonner for toast notifications when user submits the enquiry form or calculates ROI",
+    "Add data-testid attributes to all interactive elements, buttons, inputs, tabs, and form submissions",
+    "Ensure glassmorphism nav with clear contact button and zero transparent content overlaps"
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g. transition: all). Exclude transforms.",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles with hover interaction animations & brand accent color.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 for icons. Use Lucide or Phosphor icons.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "All interactive elements MUST include a data-testid attribute for robust automated testing."
+  ]
+}
