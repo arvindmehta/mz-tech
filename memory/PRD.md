@@ -34,7 +34,7 @@ User wants a website for a new company (name: **MZ Tech**). Founder has 17 years
 - data-testids on all interactive elements.
 
 ## Placeholders to update before go-live
-- Phone (+61 400 000 000), email (hello@mztech.com), WhatsApp number are PLACEHOLDERS (user confirmed 27 Sep 2026: keep placeholders for now, decide before go-live; WhatsApp intentionally mirrors the phone number so one change updates both).
+- Phone (+61 401 946 930), email (hello@mztech.com), WhatsApp number are PLACEHOLDERS (user confirmed 27 Sep 2026: keep placeholders for now, decide before go-live; WhatsApp intentionally mirrors the phone number so one change updates both).
 - Hero "live proof" metrics are illustrative examples.
 - Company registration details / ABN not yet added.
 

@@ -68,7 +68,7 @@ const Contact = () => {
                                 <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#161E2E]">
                                     <Phone className="h-5 w-5 text-amber-400" />
                                 </span>
-                                <span className="text-base font-medium">+61 400 000 000</span>
+                                <span className="text-base font-medium">+61 401 946 930</span>
                             </a>
                             <a
                                 href="mailto:hello@mztech.com"
