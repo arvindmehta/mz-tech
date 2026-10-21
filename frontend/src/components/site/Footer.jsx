@@ -69,13 +69,6 @@ const Footer = () => (
                     <p className="font-mono-tech text-xs uppercase tracking-[0.2em] text-slate-600">
                         Built with pride for our community
                     </p>
-                    <a
-                        href={`${process.env.REACT_APP_BACKEND_URL}/api/oauth/sheets/login`}
-                        data-testid="connect-sheets-link"
-                        className="text-xs text-slate-600 transition-colors duration-300 hover:text-amber-400"
-                    >
-                        Owner: Connect Google Sheets
-                    </a>
                 </div>
             </div>
         </div>

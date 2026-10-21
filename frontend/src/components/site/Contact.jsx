@@ -4,7 +4,8 @@ import { toast } from "sonner";
 import { Send, Loader2, Phone, Mail, MessageCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL?.trim().replace(/\/$/, "");
+const API = BACKEND_URL ? `${BACKEND_URL}/api` : null;
 
 const BUSINESS_TYPES = ["Trades & Construction", "Finance & Property", "Retail & Manufacturing", "Not-for-Profit", "Other Business"];
 const SERVICES = ["Website Development", "SEO", "Digital Marketing", "Marketing Automation", "Not sure yet"];
@@ -27,14 +28,27 @@ const Contact = () => {
 
     const submit = async (e) => {
         e.preventDefault();
+        if (!API) {
+            toast.error("Enquiry form is temporarily unavailable.", {
+                description: "The backend URL is not configured. Please contact us by email at info@mztech.com.au.",
+            });
+            return;
+        }
         setSending(true);
         try {
+            console.info("Submitting enquiry to API endpoint:", `${API}/enquiries`);
             await axios.post(`${API}/enquiries`, form);
             toast.success("Thank you! Your enquiry is on its way.", {
                 description: "We will get back to you within one business day.",
             });
             setForm({ name: "", email: "", phone: "", business_type: BUSINESS_TYPES[0], service: SERVICES[0], message: "" });
         } catch (err) {
+            console.error("Enquiry submission failed:", {
+                url: err.config?.url,
+                status: err.response?.status,
+                response: err.response?.data,
+                message: err.message,
+            });
             toast.error("Something went wrong.", {
                 description: "Please check your details and try again, or call us directly.",
             });
