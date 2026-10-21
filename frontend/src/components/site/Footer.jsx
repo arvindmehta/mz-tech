@@ -51,8 +51,8 @@ const Footer = () => (
                         <a href="tel:+61401946930" data-testid="footer-phone-link" className="flex items-center gap-2.5 text-sm text-slate-300 transition-colors duration-300 hover:text-amber-400">
                             <Phone className="h-4 w-4 text-amber-400" /> +61 401 946 930
                         </a>
-                        <a href="mailto:hello@mztech.com" data-testid="footer-email-link" className="flex items-center gap-2.5 text-sm text-slate-300 transition-colors duration-300 hover:text-amber-400">
-                            <Mail className="h-4 w-4 text-amber-400" /> hello@mztech.com
+                        <a href="mailto:info@mztech.com.au data-testid="footer-email-link" className="flex items-center gap-2.5 text-sm text-slate-300 transition-colors duration-300 hover:text-amber-400">
+                            <Mail className="h-4 w-4 text-amber-400" /> info@mztech.com.au
                         </a>
                         <a href="https://wa.me/61401946930" target="_blank" rel="noopener noreferrer" data-testid="footer-whatsapp-link" className="flex items-center gap-2.5 text-sm text-slate-300 transition-colors duration-300 hover:text-amber-400">
                             <MessageCircle className="h-4 w-4 text-amber-400" /> WhatsApp us

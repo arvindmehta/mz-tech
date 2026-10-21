@@ -71,14 +71,14 @@ const Contact = () => {
                                 <span className="text-base font-medium">+61 401 946 930</span>
                             </a>
                             <a
-                                href="mailto:hello@mztech.com"
+                                href="mailto:info@mztech.com.au"
                                 data-testid="contact-email-link"
                                 className="flex items-center gap-4 text-slate-300 transition-colors duration-300 hover:text-amber-400"
                             >
                                 <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#161E2E]">
                                     <Mail className="h-5 w-5 text-amber-400" />
                                 </span>
-                                <span className="text-base font-medium">hello@mztech.com</span>
+                                <span className="text-base font-medium">info@mztech.com.au</span>
                             </a>
                             <a
                                 href="https://wa.me/61400000000"
