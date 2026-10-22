@@ -106,7 +106,7 @@ const Hero = () => {
                         </button>
                         <button
                             data-testid="hero-call-button"
-                            onClick={() => (window.location.href = "tel:+61400000000")}
+                            onClick={() => (window.location.href = "tel:+61401946930")}
                             className="flex items-center justify-center gap-2 rounded-full border border-white/15 px-8 py-4 text-base font-semibold text-white transition-colors duration-300 hover:border-amber-500/60 hover:text-amber-400"
                         >
                             <Phone className="h-5 w-5" />

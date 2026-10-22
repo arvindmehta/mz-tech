@@ -1,11 +1,9 @@
 import { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { Send, Loader2, Phone, Mail, MessageCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL?.trim().replace(/\/$/, "");
-const API = BACKEND_URL ? `${BACKEND_URL}/api` : null;
+const GOOGLE_APPS_SCRIPT_URL = process.env.REACT_APP_GOOGLE_APPS_SCRIPT_URL?.trim();
 
 const BUSINESS_TYPES = ["Trades & Construction", "Finance & Property", "Retail & Manufacturing", "Not-for-Profit", "Other Business"];
 const SERVICES = ["Website Development", "SEO", "Digital Marketing", "Marketing Automation", "Not sure yet"];
@@ -28,16 +26,26 @@ const Contact = () => {
 
     const submit = async (e) => {
         e.preventDefault();
-        if (!API) {
-            toast.error("Enquiry form is temporarily unavailable.", {
-                description: "The backend URL is not configured. Please contact us by email at info@mztech.com.au.",
+        if (!GOOGLE_APPS_SCRIPT_URL) {
+            toast.error("Enquiry form is not configured yet.", {
+                description: "Please contact us at info@mztech.com.au while we finish configuring the enquiry form.",
             });
             return;
         }
         setSending(true);
         try {
-            console.info("Submitting enquiry to API endpoint:", `${API}/enquiries`);
-            await axios.post(`${API}/enquiries`, form);
+            await fetch(GOOGLE_APPS_SCRIPT_URL, {
+                method: "POST",
+                mode: "no-cors",
+                body: new URLSearchParams({
+                    name: form.name,
+                    email: form.email,
+                    phone: form.phone,
+                    business_type: form.business_type,
+                    service: form.service,
+                    message: form.message,
+                }),
+            });
             toast.success("Thank you! Your enquiry is on its way.", {
                 description: "We will get back to you within one business day.",
             });
@@ -75,7 +83,7 @@ const Contact = () => {
                         </p>
                         <div className="mt-10 space-y-5">
                             <a
-                                href="tel:+61400000000"
+                                href="tel:+61401946930"
                                 data-testid="contact-phone-link"
                                 className="flex items-center gap-4 text-slate-300 transition-colors duration-300 hover:text-amber-400"
                             >
@@ -95,7 +103,7 @@ const Contact = () => {
                                 <span className="text-base font-medium">info@mztech.com.au</span>
                             </a>
                             <a
-                                href="https://wa.me/61400000000"
+                                href="https://wa.me/614001946930"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 data-testid="contact-whatsapp-link"
